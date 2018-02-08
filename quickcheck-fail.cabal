@@ -1,0 +1,33 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f00bad1ff59337d32af8e314b6371956809711100aa5f6c54cc48cfa8fb1244d
+
+name:           quickcheck-fail
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/k-bx/quickcheck-fail#readme
+author:         Kostiantyn Rybnikov
+maintainer:     k-bx@k-bx.com
+copyright:      Kostiantyn Rybnikov
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+executable quickcheck-fail
+  main-is: Main.hs
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , checkers
+    , ifctx
+  other-modules:
+      Paths_quickcheck_fail
+  default-language: Haskell2010
